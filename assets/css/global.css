@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 15px 20px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  color: #302e2e;
+}
+
+.navbar span, #footer p span {
+  font-weight: 600;
+  color: #fd7792;
+  position: relative;
+}
+
+.navbar .navbar-brand {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-right: 1rem;
+}
+
+.navbar .navbar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #ff69b4;
+  color: #fff;
+}
+
+.navbar .pc-only .container {
+  display: flex;
+}
+
+.navbar .nav-item .dropdown-menu {
+  background-color: #fff;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  font-size: inherit;
+  border-bottom: 2px solid #ff69b4;
+}
+
+/* Sections */
+
+.white-section {
+  background-color: #fff;
+  color: #000000a8;
+}
+
+.color-section {
+  background-color: #fd7792;
+  color: #fff;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #fd7792;
+  border-color: #fd7792;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #fa4b6e;
+  border-color: #fa4b6e;
+}
+
+#footer p {
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+  /* desktop */
+  .pc-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .navbar .pc-only {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* mobile */
+  .pc-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .mobile-only {
+    width: 100%;
+  }
+
+  .navbar .mobile-only .navbar-toggler {
+    /* margin-right: 20.5rem; */
+    position: absolute;
+    left: 70%;
+    top: 0.7rem;
+  }
+
+  .nav-item {
+    width: 40%;
+  }
+}

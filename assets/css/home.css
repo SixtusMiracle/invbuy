@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.main {
+  background-color: #ededed;
+}
+
+#title {
+  width: 100%;
+}
+
+#title .cta {
+  text-align: center;
+  padding: 5% 15%;
+}
+
+#title .cta p {
+  color: #ffffffc5;
+}
+
+/* Features Section */
+
+#features {
+  padding: 7% 15%;
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 4.5%;
+}
+
+.icon {
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.feature-icon {
+  color: #ef8172;
+  margin-bottom: 5%;
+}
+
+.icon:hover,
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+.wic {
+  color: #fff;
+  margin-right: 4px;
+}
+
+.wic:hover {
+  color: #fff;
+}
+
+.blic {
+  color: #000;
+  margin-right: 4px;
+}
+
+.blic:hover {
+  color: #000;
+}
+
+#packages .card-deck .card {
+  border: none;
+  color: #000000;
+}
+
+#packages .card-deck .card-header {
+  background-color: #fff;
+  border-bottom: 5px solid #fd7792;
+  color: #2e2e2e;
+}
+
+#packages .card-deck .card-header h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#packages .card-deck .card-body .card-title {
+  font-weight: 700;
+  color: #2e2e2e;
+  font-size: 36px;
+}
+
+#packages .card-deck .card-body .card-divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #0000001a;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#about .header h3 {
+  font-weight: 700;
+}
+
+#about #accordion .faq-list ul {
+  list-style-type: none;
+}
+
+#about #accordion .faq-list ul a {
+  text-decoration: none;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+  /* desktop */
+  #about {
+    padding: 2% 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* mobile */
+  #about {
+    padding: 2% 3%;
+  }
+}
